@@ -55,9 +55,9 @@ set expandtab
 " Be smart when using tabs ;)
 set smarttab
 
-" 1 tab == 4 spaces
-set shiftwidth=4
-set tabstop=4
+" 1 tab == 2 spaces
+set shiftwidth=2
+set tabstop=2
 
 " Linebreak on 500 characters
 set lbr
@@ -73,3 +73,9 @@ set wrap "Wrap lines
 """"""""""""""""""""""""""""""
 " Always show the status line
 set laststatus=2
+
+""""""""""""""""""""""""""""""
+" => some file extensions 
+""""""""""""""""""""""""""""""
+au BufNewFile,BufRead *.twig setlocal syntax=html
+au BufNewFile,BufRead *.less setlocal syntax=css
