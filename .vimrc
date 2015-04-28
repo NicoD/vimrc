@@ -5,6 +5,9 @@
 " Sets how many lines of history VIM has to remember
 set history=700
 
+" Never create swp files
+set noswapfile
+
 " Enable filetype plugins
 filetype plugin on
 filetype indent on
