@@ -93,32 +93,3 @@ au BufNewFile,BufRead *.twig setlocal syntax=html
 au BufNewFile,BufRead *.less setlocal syntax=css
 
 
-set runtimepath+=~/.vim/bundle/vim-jade/
-au BufnewFile,BufRead *.jade setlocal syntax=jade
-
-""""""""""""""""""""""""""""""
-" => plugins
-""""""""""""""""""""""""""""""
-set runtimepath+=~/.vim/bundle/jshint2.vim/
-
-let jshint2_read=1
-let jshint2_save=1
-let jshint2_close=0
-let jshint2_confirm=0
-let jshint2_height=5
-
-" jshint validation
-nnoremap <silent><F2> :JSHint<CR>
-inoremap <silent><F2> <C-O>:JSHint<CR>
-vnoremap <silent><F2> :JSHint<CR>
-
-" show next jshint error
-nnoremap <silent><F3> :lnext<CR>
-inoremap <silent><F3> <C-O>:lnext<CR>
-vnoremap <silent><F3> :lnext<CR>
-
-" show previous jshint error
-nnoremap <silent><F4> :lprevious<CR>
-inoremap <silent><F4> <C-O>:lprevious<CR>
-vnoremap <silent><F4> :lprevious<CR>
-
